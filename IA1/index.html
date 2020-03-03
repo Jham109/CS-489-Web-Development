@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Begin HEAD section of document. Here we must use HTML comments as shown
+    here. -->
+    <!-- Default target for all hyperlinks in this file:
+    https://www.w3schools.com/tags/att_base_target.asp -->
+    <base target="_top"> 
+    <!-- Provide metadata on this file. Can be used by browsers, search engines,
+    etc. -->
+    <meta charset="utf-8">
+    <!-- HTML5 method that specifies viewable part of page ('viewport'). Always
+         use the following, which sets the width of the page to the width of the
+         device and scales page content to fit into page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import External stylesheets and libraries using 'CDN' (content delivery
+    network) links: -->
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">    
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <!-- Our local CSS stylesheet -->
+    <link rel="stylesheet" href = "styles/navbar.css">
+
+</head>
+ 
+<body>
+  <!-- Begin the BODY section of the document.  -->
+   <!-- Define Favicon -->
+   <link rel='shortcut icon' type='image/x-icon' href="https://dl.dropboxusercontent.com/s/79q9a1xy2148unf/SpeedScore3Icon.ico" />
+    
+  <!-- Fixed menu and button content goes here to define app structure: the top
+       bar, the side menu, the bottom bar, and the floating contextual action
+       button  -->
+  <!-- The top navigation bar -->
+  <div id="navBar" class="navbar">  
+    <span class="navbarItems">
+      <button id="menuBtn" style="background-color: transparent;
+      border-color:#13294E; text-align: center">
+        <span id="menuBtnIcon" class="fas fa-bars" style="color:white;
+        font-size: 30px; cursor:pointer; text-align: center">
+        </span>
+      </button>
+      <span id="topBarTitle" style="color:white; font-size: 18px">
+        Activity Feed</span>
+    </span>
+  </div>
+  
+  
+ <!--BEGIN SIDE MENU -->
+ <div id="sideMenu" class="sidenav" >
+   <!--SIDE MENU TITLE -->
+  <div class="sidenavtitle">
+      <img src="selfie.jpg" height='50' width='50'>
+      <span id="userID" style="font-size:14px">&nbsp;Joseph Cunningham&nbsp;&nbsp;</span>
+   </div>
+   <!--BEGIN MENU CONTENT-->
+ <div id="mainMenuContent">
+ <!--BEGIN GROUP OF MODE/ACTION BUTTONS -->
+ <!--Mode buttons show current mode Action buttons are contextual; they provide
+    easy access to most important functionality in current mode 
+  -->
+  <div id="aboutItem">
+  <a id= "" class="menuItem"><span class=""></span>&nbsp;Background</a>
+  <a id= "" class="menuItem"><span class=""></span>&nbsp;General Information</a>
+  </div>
+
+  <div id="familyItem">
+  <a id= "" class="menuItem"><span class=""></span>&nbsp;Pets</a>
+  <a id= "" class="menuItem"><span class=""></span>&nbsp;Family Members</a>
+  </div>
+
+  <div id="hobbiesItem">
+  <a id= "" class="menuItem" ><span class=""></span>&nbsp;Outdoors</a>
+  <a id= "" class="menuItem"><span class=""></span>&nbsp;Indoors</a>
+  </div>
+  <a id=logOutBtn><span class=""></span>&nbsp;Log Out</a>
+   <!-- END GROUP OF MODE/ACTION BUTTONS -->
+</div>
+<!-- END MAIN MENU CONTENT -->
+</div>
+<!-- END SIDEMENU -->
+
+<!-- BEGIN FIXED BOTTOM BAR -->
+<div id="bottomBar" class="bottombar">
+<a id="about" class="bottomBarBtn"><span style="display:block; padding-top:3px"
+class="nonMenuItem fas fa-address-card"></span><span style="display:block;font-size:
+small">About Me</span></a>
+<a id="family" class="bottomBarBtn"><span style="display:block; padding-top:3px"
+class="nonMenuItem fas fa-users"></span><span style="display:block;font-size:
+small">Family</span></a>
+<a id="Hobbies" class="bottomBarBtn"><span style="display:block; padding-top:3px"
+class="nonMenuItem fas fa-football-ball"></span><span style="display:block;font-size:
+small">Hobbies</span></a> 
+</div>
+<!-- END FIXED BOTTOM BAR-->
+ 
+  <!-- BEGIN APP PAGE DEFINITIONS -->
+ 
+   <!-- Activity feed page for viewing feed -->
+   <div id="aboutDiv"  class="paddedPage">
+    <h1 align="center">About Me</h1>
+    <p1 class="discription">My favorite color is green, which explains the color scheme of this website.</p1>
+  </div>
+
+  <!-- Rounds page displaying the user's round history -->
+  <div id="familyDiv" class="paddedPage">
+      <h1 align="center">Family</h1>
+      <img src="Rudy.JPG" height="200" width="200">
+      <p1 class="description">Rudy is the newest member of my family. I got him in Lewiston, ID when he was just 2 months old. Now, he is about one and a half.</p1>
+  </div>
+
+   <!-- Page  for displaying and searching for courses -->
+   <div id="hobbiesDiv"  class="paddedPage">
+      <h1 align="center">Hobbies</h1>
+      <div w3-include-html="html/underConstruction.html" > </div>
+   </div>
+  <!-- END APP PAGE DEFINITIONS -->
+    
+  <!-- Begin SCRIPT section of document. -->
+  
+  <script src="scripts/includeHTML.js"></script>
+  <script src="scripts/eventHandlers.js"></script>
+  <script src="scripts/startUp.js"></script>
+ 
+   
+</html>
